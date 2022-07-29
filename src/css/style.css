@@ -163,16 +163,16 @@ color: #212529;
 
 .containerListaProdutos ul li p {
 font-size: 0.7rem;
-color: #868e96;
-font-weight: 400;
+color: #212529;
+font-weight: 500;
 margin: 10px 0;
 }
 .containerListaProdutos ul li span {
 font-size: 0.8rem;
-font-weight: 500;
+font-weight: 400;
 margin-top: 10px;
 display: inline-block;
-color: #212529;
+color: #868e96;
 }
 .containerListaProdutos ul li ol {
 list-style: decimal;
