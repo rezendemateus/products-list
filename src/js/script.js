@@ -65,18 +65,14 @@ function filtrarInput (produtos) {
     const buscaPorNome = document.querySelector(".campoBuscaPorNome");
     const inputValue = buscaPorNome.value;
 
-    let produtosFiltrados = []
-
-    produtos.forEach((produto) => {
-
+    const produtosFiltrados = produtos.filter((produto) => {
         const { nome, secao, categoria } = produto;
 
-            if(nome.toLowerCase() === inputValue.toLowerCase() || categoria.toLowerCase() === inputValue.toLowerCase || secao.toLowerCase() === inputValue.toLowerCase()){
-                produtosFiltrados.push(produto)
-            }
-        })
+        return nome.toLowerCase().includes(inputValue.toLowerCase()) || secao.toLowerCase().includes(inputValue.toLowerCase()) || categoria.toLowerCase().includes(inputValue.toLowerCase())
+    })
 
-    criarCards(produtosFiltrados)
+    console.log(produtosFiltrados)
+    criarCards(produtosFiltrados);
 }
 
 function filtrarPanificadora (produtos) {

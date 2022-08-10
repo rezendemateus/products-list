@@ -131,7 +131,7 @@ border-radius: 50px 0;
 /* CONTAINER DE PRODUTOS */
 
 .containerListaProdutos {
-width: 70%;
+width: 75%;
 }
 
 .containerListaProdutos ul {
@@ -148,7 +148,7 @@ border-radius: 8px;
 transition: ease-in-out 0.1s;
 width: calc(95% / 4);
 margin-bottom: 30px;
-margin-right: 15px;
+margin-right: 10px;
 position: relative;
 padding: 2px;
 min-width: 180px;
@@ -215,7 +215,7 @@ padding: 5px;
 }
 
 .containerCarrinho {
-    width: 30%;
+    width: 25%;
     height: 400px;
 }
 
@@ -244,6 +244,7 @@ padding: 5px;
     margin-top: 0.75rem;
     align-items: center;
     height: 29.688rem;
+    overflow-y:scroll;
 }
 
 .imagemSacola {
@@ -271,7 +272,7 @@ padding: 5px;
 
 .produtosCarrinho ul li {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -379,7 +380,7 @@ padding: 5px;
 
 @media (max-width: 985px) {
     .filtersContainer {
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
     }
 }
 
@@ -419,5 +420,27 @@ padding: 5px;
         top: 3rem;
     }
 
+    .filtersContainer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #botoesContainer {
+        width: 100%;
+        height: 3.5rem;
+        flex-direction: row;
+        overflow-x: scroll;
+        align-items: flex-start;
+    }
+
+    .containerBuscaPorNome {
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .campoBuscaPorNome {
+        width: 100%;
+    }
 }
  
