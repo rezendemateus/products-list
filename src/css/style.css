@@ -379,14 +379,35 @@ padding: 5px;
 }
 
 @media (max-width: 985px) {
+
+    main {
+        width: 95%;
+        margin: 15px;
+    }
+
     .filtersContainer {
-        /* overflow-x: scroll; */
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .containerVitrine{
+        width: 100%;
+    }
+
+    .containerListaProdutos {
+        width: 80%;
+    }
+
+    .containerListaProdutos ul li {
+        width: calc(80% / 3);
+        margin-right: 2px;
     }
 }
 
 @media (max-width: 750px) {
     .containerVitrine {
         flex-direction: column;
+        width: 100%;
     }
 
     .containerListaProdutos {
